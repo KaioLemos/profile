@@ -223,10 +223,8 @@ nav ul li a:hover::after{
   transform: translateY(-10px);
 }
 
-#services p {
-  text-align: justify;
-  word-spacing: -0.1em;
-  letter-spacing: -1px;
+#services p, #services h2 {
+  text-align: center;
 }
 
 /* ----------portfolio------- */
