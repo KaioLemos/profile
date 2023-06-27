@@ -43,6 +43,11 @@ nav{
   text-decoration: none;
 }
 
+nav a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 .logo span{
   color: #ff004f;
 }
@@ -274,10 +279,6 @@ nav ul li a:hover::after{
   margin-bottom: 20px;
 }
 
-#portfolio p {
-  text-align: justify;
-  word-spacing: -0.1em;
-}
 
 .layer a{
   margin-top: 20px;
