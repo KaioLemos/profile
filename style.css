@@ -226,8 +226,8 @@ nav ul li a:hover::after{
 #services p {
   text-align: justify;
   word-spacing: -0.1em;
+  letter-spacing: -1px;
 }
-
 
 /* ----------portfolio------- */
 
