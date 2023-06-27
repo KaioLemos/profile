@@ -38,6 +38,9 @@ nav{
   font-size: 72px;
   font-weight: 800;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
 }
 
 .logo span{
@@ -116,6 +119,12 @@ nav ul li a:hover::after{
   font-weight: 600;
   color: #fff;
 }
+
+.sub-title-p {
+  text-align: justify;
+  word-spacing: -0.1em;
+}
+
 
 .tab-titles{
   display: flex;
@@ -209,6 +218,12 @@ nav ul li a:hover::after{
   transform: translateY(-10px);
 }
 
+#services p {
+  text-align: justify;
+  word-spacing: -0.1em;
+}
+
+
 /* ----------portfolio------- */
 
 #portfolio{
@@ -259,6 +274,11 @@ nav ul li a:hover::after{
   margin-bottom: 20px;
 }
 
+#portfolio p {
+  text-align: justify;
+  word-spacing: -0.1em;
+}
+
 .layer a{
   margin-top: 20px;
   color: #ff004f;
@@ -294,7 +314,6 @@ nav ul li a:hover::after{
 
 .btn:hover{
   background: #ff004f;
-
 }
 
 /* -------contact------- */
