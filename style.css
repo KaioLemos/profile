@@ -381,6 +381,12 @@ form .btn2{
   cursor: pointer;
 }
 
+#msg{
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
+}
+
 .copyright{
   width: 100%;
   text-align: center;
@@ -467,10 +473,4 @@ nav .fa-solid{
   .copyright{
     font-size: 14px;
   }
-}
-
-#msg{
-  color: #61b752;
-  margin-top: -40px;
-  display: block;
 }

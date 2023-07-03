@@ -212,6 +212,9 @@
 
     const removeloading = () => {
       button.innerHTML = 'Submit';
+      document.querySelector('input[name=name]').value = '';
+      document.querySelector('input[name=email]').value = '';
+      document.querySelector('textarea[name=message]').value = '';
     };
 
     const handleSubmit = (event) => {
@@ -220,6 +223,7 @@
       const name = document.querySelector('input[name=name]').value;
       const email = document.querySelector('input[name=email]').value;
       const message = document.querySelector('textarea[name=message]').value;
+      const msg = document.getElementById('msg');
 
       fetch('https://api.sheetmonkey.io/form/7VYUkLUeyGJ3LmW11baruV', {
         method: 'post',
@@ -228,7 +232,12 @@
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({name, email, message}),
-      }).then(() => alert('Message sent succesfully'))
+      }).then(response => {
+        msg.innerHTML = 'Message sent successfully';
+        setTimeout(function(){
+          msg.innerHTML = '';
+        }, 5000)
+      })
         .catch((error) => alert(error))
         .finally(() => removeloading())
     }
