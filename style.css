@@ -390,6 +390,19 @@ form .btn2{
   margin-top: 20px;
 }
 
+.fa-spinner{
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
 /* ----- css for small screens ------ */
 
 nav .fa-solid{
