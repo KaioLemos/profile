@@ -204,8 +204,8 @@
   <!-- contact form -->
 
   <script>
-
     const button = document.querySelector('button[type=submit]');
+
     const addloading = () => {
       button.innerHTML = 'Sending <i class="fa-solid fa-spinner"></i>';
     };
@@ -224,6 +224,8 @@
       const email = document.querySelector('input[name=email]').value;
       const message = document.querySelector('textarea[name=message]').value;
       const msg = document.getElementById('msg');
+      const now = new Date();
+      const timestamp = now.toLocaleString();
 
       fetch('https://api.sheetmonkey.io/form/7VYUkLUeyGJ3LmW11baruV', {
         method: 'post',
@@ -231,7 +233,7 @@
           'Accept': 'application/json',
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({name, email, message}),
+        body: JSON.stringify({name, email, message, timestamp}),
       }).then(response => {
         msg.innerHTML = 'Message sent successfully';
         setTimeout(function(){
